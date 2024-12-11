@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+th{
+    text-align: center;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 20px;
+    font-size: 16px;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Attendance Form */
+.attendance-form {
+    background: #2dc3da;
+    border: 2px solid #20432c; /* Add border around the form */
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 4px 8px rgb(244, 242, 242);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.attendance-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.attendance-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-form td {
+    padding: 12px;
+    vertical-align: top;
+}
+
+.attendance-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.attendance-form option{
+    font-size: larger;
+}
+
+.attendance-form input,
+.attendance-form select,
+.attendance-form textarea {
+    width: 100%;
+    padding: 12px;
+    /* outline: #2ccd31; */
+    margin-bottom: 20px;
+    border: 1px  #ddd;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+/* .attendance-form input:focus {
+    outline: none;       /* Removes the outline */
+    /* background-color: white; Optional: Set the background to white or a color of your choice */
+/* } */ */
+
+.attendance-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.attendance-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ccd31;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.attendance-form button:hover {
+    background-color: #45a049;
+}
+
+/* Attendance Log */
+.attendance-log {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    background-color: #fff;
+    border: 2px solid #ddd; /* Add border around the table */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.attendance-log h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#attendanceLogTable {
+    width: 100%;
+    border-collapse: collapse;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+#attendanceLogTable th,
+#attendanceLogTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd; /* Border around each cell */
+}
+
+#attendanceLogTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#attendanceLogTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#attendanceLogTable tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .attendance-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .attendance-log {
+        width: 100%;
+    }
+}
